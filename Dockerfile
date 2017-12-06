@@ -10,4 +10,4 @@ RUN apt-get update; \
     localedef -i en_US -f UTF-8 en_US.UTF-8; \
     curl -sS http://rpm.k50.ru/vertica-client-8.0.1-0-w-ini.x86_64.tar.gz | tar xvz -C /
 
-ENTRYPOINT ["/opt/vertica/bin/vsql"]
+ENTRYPOINT ["/opt/vertica/bin/vsql --version"]
