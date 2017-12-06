@@ -1,11 +1,11 @@
-The image with vertica-client
+## The image with vertica-client
 
-Using:
+### Using:
 
-Build:
+#### Build:
 docker build --pull -t vertica-client .
 
-Run:
+#### Run:
 docker run --rm vertica-client -h$VERTICA_HOST -U$ERTICA_USER -w$ERTICA_PASS [$DBNAME]  -c"$QUERY"
 
 or interactive use
